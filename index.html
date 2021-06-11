@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Components</title>
+    <!-- This is METHOD 1 of doing CSS
+    <style>
+        body {
+            color: red;
+        }
+
+    </style> -->
+    <!-- This is METHOD 3 of doing CSS(Most commonly used) -->
+    <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
 
-    <h2>Welcome to Siddhartha's component library</h2>
-    <p>I am doing neogcamp levelZero currently. I am a student here at dbit doing my engineering in information technology. I want to make a portfolio to display  my projects in my portfolio</p>
+    <h2 id="main-head">Welcome to Siddhartha's component library</h2>
+    <!-- This is METHOD 2 OF doing CSS
+    <h2 style="color: red;">Welcome to Siddhartha's component library</h2> -->
+    <p class="para">I am doing neogcamp levelZero currently. I am a student here at dbit doing my engineering in information technology. I want to make a portfolio to display  my projects in my portfolio</p>
 
     <hr>
 
@@ -23,9 +34,9 @@
 
     <h2>@containers</h2>
     <h3>fluid cointainer</h3>
-    <div>This is a fliud container and will go till the end of the page</div>
+    <div class="para">This is a fliud container and will go till the end of the page</div>
     <h3>center container</h3>
-    <div>This is a center container and will go till a specilized width</div>
+    <div class="para">This is a center container and will go till a specilized width</div>
     
     <hr>
 
@@ -98,5 +109,11 @@
     </section>
     
     <!-- <h3>This is how you commentthings in html</h3> -->
+
+    <hr> 
+
+    <footer >
+
+    </footer>
 </body>
 </html>

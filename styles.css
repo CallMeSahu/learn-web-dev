@@ -1,0 +1,23 @@
+body{
+    color: red;
+}
+
+h1{
+    color: yellow;
+}
+
+h2{
+    color: blue;
+}
+
+h3{
+    color: green
+}
+
+#main-head{
+    color: Orange;
+}
+
+.para{
+    color: blueviolet;
+}
