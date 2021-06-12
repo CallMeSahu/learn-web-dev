@@ -4,23 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Components</title>
-    <!-- This is METHOD 1 of doing CSS
-    <style>
-        body {
-            color: red;
-        }
-
-    </style> -->
-    <!-- This is METHOD 3 of doing CSS(Most commonly used) -->
+    <title>HTML Components</title>       
     <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
 
-    <h2 id="main-head">Welcome to Siddhartha's component library</h2>
-    <!-- This is METHOD 2 OF doing CSS
-    <h2 style="color: red;">Welcome to Siddhartha's component library</h2> -->
+    <h2 id="main-head">Welcome to Siddhartha's component library</h2>   
     <p class="para">I am doing neogcamp levelZero currently. I am a student here at dbit doing my engineering in information technology. I want to make a portfolio to display  my projects in my portfolio</p>
+    <p>This line will have a <strong>bold</strong> text.</p>
 
     <hr>
 
@@ -34,55 +25,56 @@
 
     <h2>@containers</h2>
     <h3>fluid cointainer</h3>
-    <div class="para">This is a fliud container and will go till the end of the page</div>
+    <div class="container">This is a fliud container and will go till the end of the page</div>
     <h3>center container</h3>
-    <div class="para">This is a center container and will go till a specilized width</div>
+    <div class="container container-center">This is a center container and will go till a specific 
+        width.</div>
     
     <hr>
 
     <h2>@links</h2>
-    <a href="/">Siddhartha</a>
-    <a href="/">Sahu</a>    
+    <a class="link link-primary" href="/">Siddhartha</a>
+    <a class="link link-secondary" href="/">Sahu</a>    
 
     <hr>
 
     <h2>@list</h2>
     <h3>Ordered list</h3>
-    <ol>
+    <ol class="list-non-bullet">
         <li>one</li>
         <li>two</li>
         <li>three</li>
     </ol>
-    <h3>Unordered list</h3>
-    <ul>
-        <li>don</li>
-        <li>bosco</li>
-        <li>institute</li>
-        <li>of</li>
-        <li>technology</li>
+    <h3 >Unordered list</h3>
+    <ul class="list-non-bullet">
+        <li class="list-item-incline">don</li>
+        <li class="list-item-incline">bosco</li>
+        <li class="list-item-incline">institute</li>
+        <li class="list-item-incline">of</li>
+        <li class="list-item-incline">technology</li>
 
     </ul>
     <h3>reverse ordered list</h3>
-    <ol>
+    <ol reversed>
         <li>makan</li>
         <li>kapda</li>
         <li>roti</li>
-    </ol>
+    </ol> 
 
     <hr>
 
     <h2>@nav</h2>
-    <nav>
-        <div>iAmBrand</div>
-        <ul>
-            <li>
-                <a href="/">HOME</a>
+    <nav class="navigation container">
+        <div class="nav-brand">Siddhartha Sahu</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">HOME</a>
             </li>
-            <li>
-                <a href="/">PROJECTS</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">PROJECTS</a>
             </li>
-            <li>
-                <a href="/">ABOUT ME</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">ABOUT ME</a>
             </li>
         </ul>
     </nav>
@@ -90,30 +82,41 @@
     <hr>
 
     <h2>@header</h2>
-    <header>
-        <img src="images/hero.svg"/>
-        <h1>heading inside hero</h1>
+    <header class="hero">
+        <img class="hero-img" src="images/hero.svg"/>
+        <h1 class="hero-heading">I am a <span class="hero-inverted">web developer</span> </h1>
     </header>
 
     <hr>
 
     <h2>@sections</h2>
-    <section>
-        <h3>White Section</h3>
-        <p>This will have white bakground</p>
+    <section class="section">
+        <div class="container-center">
+        <h1>White Section</h1>
+        <p>If you are a complete beginner, web development can be challenging — we will hold your hand and provide enough detail for you to feel comfortable and learn the topics properly. You should feel at home whether you are a student learning web development (on your own or as part of a class), a teacher looking for class materials, a hobbyist, or someone who just wants to understand more about how web technologies work.</p>
     </section>
+        </div>
     
-    <section>
-        <h3>Off-white Section</h3>
-        <p>This will have grey bakground</p>
+    <section class="section ow">
+        <div class="container-center">
+        <h1>Off-white Section</h1>
+        <p>If you are a complete beginner, web development can be challenging — we will hold your hand and provide enough detail for you to feel comfortable and learn the topics properly. You should feel at home whether you are a student learning web development (on your own or as part of a class), a teacher looking for class materials, a hobbyist, or someone who just wants to understand more about how web technologies work.</p>
     </section>
+        </div>
     
     <!-- <h3>This is how you commentthings in html</h3> -->
 
     <hr> 
 
-    <footer >
-
+    <footer class="footer">
+        <div class="footer-header">
+            Some small heading inside footer
+        </div>
+        <ul class="social-links">
+            <li class="list-item-inline"><a class="link" href="/">oneSocial</a></li>
+            <li class="list-item-inline"><a class="link" href="/">twoSocial</a></li>
+            <li class="list-item-inline"><a class="link" href="/">threeSocial</a></li>
+        </ul>
     </footer>
 </body>
 </html>
